@@ -1,0 +1,119 @@
+# ------------------------------------------------
+# React Frontend Comprehensive with OS Specifics
+# ------------------------------------------------
+
+# Node dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Production build
+/build
+/dist
+
+# Next.js
+.next/
+out/
+
+# Storybook
+.storybook-out/
+
+# Cache
+.cache/
+.pnp/
+.pnp.js
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# IDEs and editors
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.tmproj
+.vscode/
+
+# OS generated files
+## macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+## Linux
+*~
+.directory
+.fuse_hidden*
+.Trash-*
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.swp
+*.swo
+*.swn
+*.orig
+*~
+*.tmp
+
+# Linters
+.eslintcache
+.tslint.json
+.stylelintcache
+
+# Testing and coverage
+/coverage
+/.nyc_output
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# CSS/SASS/SCSS map files
+*.css.map
+*.scss.map
+
+# SASS cache
+.sass-cache/
+
+# Lock files
+*.lock
+
+# Misc
+*.bak
+*.cache
+*.log.tmp
+*.log.text
+*.log.text.*
+
+# Database files
+*.sqlite
+
+# Certificates and Keys
+*.pem
+*.key
+*.crt
+*.pub
+*.cer
