@@ -1,12 +1,13 @@
 import React from 'react';
-import { Box, Center, Text } from '@chakra-ui/react';
+import {Center, Text} from '@chakra-ui/react';
+import Layout from "../../components/Layout";
 
 const NotFound: React.FC = () => (
-    <Box>
+    <Layout>
         <Center flexDir="column" p={8}>
             <Text fontSize="xl">Página não encontrada</Text>
         </Center>
-    </Box>
+    </Layout>
 );
 
 export default NotFound;

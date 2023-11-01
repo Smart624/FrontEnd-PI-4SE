@@ -1,11 +1,9 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { Box, Center, FormLabel, Input, Button, VStack } from '@chakra-ui/react';
+import { Center, FormLabel, Input, Button, VStack } from '@chakra-ui/react';
+import Layout from "../../components/Layout";
 
 const Contact: React.FC = () => (
-    <Box>
-        <Header />
+    <Layout>
         <Center flexDir="column" p={8}>
             <VStack spacing={4} width="md">
                 <FormLabel>Nome</FormLabel>
@@ -17,8 +15,7 @@ const Contact: React.FC = () => (
                 <Button colorScheme="blue">Enviar</Button>
             </VStack>
         </Center>
-        <Footer />
-    </Box>
+</Layout>
 );
 
 export default Contact;

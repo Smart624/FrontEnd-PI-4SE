@@ -1,11 +1,9 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { Box, Center, VStack, Text } from '@chakra-ui/react';
+import {Center, VStack, Text} from '@chakra-ui/react';
+import Layout from "../../components/Layout";
 
 const Services: React.FC = () => (
-    <Box>
-        <Header />
+    <Layout>
         <Center flexDir="column" p={8}>
             <VStack spacing={4}>
                 {/* Lista de serviços */}
@@ -14,8 +12,7 @@ const Services: React.FC = () => (
                 {/* ... outros serviços */}
             </VStack>
         </Center>
-        <Footer />
-    </Box>
+    </Layout>
 );
 
 export default Services;

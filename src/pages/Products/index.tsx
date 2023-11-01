@@ -1,11 +1,9 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { Box, Center, Text, VStack } from '@chakra-ui/react';
+import { Center, Text, VStack } from '@chakra-ui/react';
+import Layout from "../../components/Layout";
 
 const Products: React.FC = () => (
-    <Box>
-        <Header />
+<Layout>
         <Center flexDir="column" p={8}>
             <VStack spacing={4}>
                 {/* Lista de produtos */}
@@ -14,8 +12,7 @@ const Products: React.FC = () => (
                 <Text>Produto 3</Text>
             </VStack>
         </Center>
-        <Footer />
-    </Box>
+</Layout>
 );
 
 export default Products;

@@ -1,11 +1,9 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { Box, Center, VStack, Text } from '@chakra-ui/react';
+import {Center, VStack, Text} from '@chakra-ui/react';
+import Layout from "../../components/Layout";
 
 const Blog: React.FC = () => (
-    <Box>
-        <Header />
+    <Layout>
         <Center flexDir="column" p={8}>
             <VStack spacing={4}>
                 {/* Lista de postagens do blog */}
@@ -14,8 +12,7 @@ const Blog: React.FC = () => (
                 <Text>Postagem 3</Text>
             </VStack>
         </Center>
-        <Footer />
-    </Box>
+    </Layout>
 );
 
 export default Blog;

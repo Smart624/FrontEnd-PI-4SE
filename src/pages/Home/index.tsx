@@ -1,19 +1,17 @@
-import React from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { Box, Center, Heading } from '@chakra-ui/react';
-import '../../index.css';
+// src/pages/Home/index.tsx
 
+import React from 'react';
+import Layout from '../../components/Layout';
+import {Center, Heading} from '@chakra-ui/react';
 
 const Home: React.FC = () => (
-    <div className="container">
-        <Header />
+    <Layout>
         {/* Corpo da página inicial */}
-        <div className="content">
+        <Center flexDir="column" p={8}>
+            <Heading as="h2" size="md">Bem-vindo à Nishi Eletrônica</Heading>
             {/* Adicione outras seções conforme necessário */}
-        </div>
-        <Footer />
-    </div>
+        </Center>
+    </Layout>
 );
 
 export default Home;
