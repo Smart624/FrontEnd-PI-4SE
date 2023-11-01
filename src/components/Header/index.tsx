@@ -12,10 +12,12 @@ export default function Header() {
 
                 <HStack spacing={8}>
                     <Link as={RouterLink} to="/">Início</Link>
-                    <Link as={RouterLink} to="/produtos">Produtos</Link>
                     <Link as={RouterLink} to="/servicos">Serviços</Link>
+                    <Link as={RouterLink} to="/agendamento">Agendamento</Link>
+                    <Link as={RouterLink} to="/produtos">Produtos</Link>
                     <Link as={RouterLink} to="/sobre">Sobre</Link>
                     <Link as={RouterLink} to="/contato">Contato</Link>
+
                 </HStack>
             </HStack>
         </Box>
