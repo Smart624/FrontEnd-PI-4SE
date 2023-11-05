@@ -5,6 +5,10 @@ import Services from '../pages/Services';
 import Contact from '../pages/Contact';
 import About from '../pages/About';
 import Scheduling from '../pages/Scheduling';
+import Faq from '../pages/Faq';
+import GuidesAndTutorials from "../pages/Guides";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
+import TermsOfService from "../pages/TermsService";
 
 const RoutesComponent: React.FC = () => (
     <Router>
@@ -15,6 +19,10 @@ const RoutesComponent: React.FC = () => (
             <Route path="/contato" element={<Contact />} />
             <Route path="/sobre" element={<About />} />
             <Route path="/agendamento" element={<Scheduling />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/guias" element={<GuidesAndTutorials />} />
+            <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
+            <Route path="/termos-de-servico" element={<TermsOfService />} />
             {/* Outras rotas podem ser adicionadas aqui */}
         </Routes>
     </Router>
