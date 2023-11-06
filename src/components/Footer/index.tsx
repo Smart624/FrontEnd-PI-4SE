@@ -12,19 +12,18 @@ const Footer: React.FC = () => {
     const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
 
     return (
-        <Box as="footer" bg="gray.800" color="white" py={[4, null, 10]}>
+        <Box as="footer" bg="gray.800" color="white" py={[4, 8, 10]}>
             <VStack
-                spacing={[4, null, 10]}
-                justify="space-around"
-                direction={['column', null, 'row']}
-                maxW="container.xl"
+                spacing={[4, 8]}
+                direction={['column', 'row']}
+                maxW={['container.sm', 'container.xl']}
                 mx="auto"
-                px={8}
+                px={[4, 8]}
             >
                 <HStack spacing={0} justify="space-around" maxW="container.xl" mx="auto" px={8} wrap="wrap">
                     {/* Useful Links */}
-                    <VStack align="flex-start" spacing={2}>
-                        <Text fontWeight="bold">Links Úteis:</Text>
+                    <VStack align="flex-start">
+                        <Text fontWeight="bold">Links Úteis</Text>
                         <Link href="/faq">FAQ</Link>
                         <Link href="/blog">Blog</Link>
                         <Link href="/guias">Guias & Tutoriais</Link>
@@ -33,8 +32,8 @@ const Footer: React.FC = () => {
                     </VStack>
 
                     {/* Contact Information */}
-                    <VStack align="center" spacing={2}>
-                        <Text fontWeight="bold">Informações de Contato:</Text>
+                    <VStack align="center">
+                        <Text fontWeight="bold">Informações de Contato</Text>
                         <Text>Endereço: Cidade Nova 1, Rua Paul Harris, 333, CEP: 13334070</Text>
                         <Text>Email: contato@nishi.com</Text>
                         <Text>Telefone: (19)3875-3831</Text>
@@ -49,8 +48,8 @@ const Footer: React.FC = () => {
                 </HStack>
 
                 {/* Social Media Icons and Business Hours Popover */}
-                <VStack align={isLargerThan768 ? 'flex-end' : 'center'} spacing={4}>
-                    <Text fontWeight="bold">Mídias Sociais:</Text>
+                <VStack align={['center', 'flex-end']}>
+                    <Text fontWeight="bold">Mídias Sociais</Text>
                     <HStack spacing={2}>
                         <Link href="https://facebook.com" isExternal>
                             <Icon as={FaFacebookF} w={5} h={5} />
@@ -82,7 +81,7 @@ const Footer: React.FC = () => {
                         </PopoverContent>
                     </Popover>
                 </VStack>
-                <Text textAlign="center" fontSize="sm" my={4}>
+                <Text textAlign="center" fontSize="sm">
                     © 2023 Nishi Eletrônica. Todos os direitos reservados.
                 </Text>
             </VStack>
