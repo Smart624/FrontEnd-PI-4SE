@@ -9,6 +9,7 @@ import Faq from '../pages/Faq';
 import GuidesAndTutorials from "../pages/Guides";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsOfService from "../pages/TermsService";
+import Blog from "../pages/Blog";
 
 const RoutesComponent: React.FC = () => (
     <Router>
@@ -23,6 +24,7 @@ const RoutesComponent: React.FC = () => (
             <Route path="/guias" element={<GuidesAndTutorials />} />
             <Route path="/politica-de-privacidade" element={<PrivacyPolicy />} />
             <Route path="/termos-de-servico" element={<TermsOfService />} />
+            <Route path="/blog" element={<Blog />} />
             {/* Outras rotas podem ser adicionadas aqui */}
         </Routes>
     </Router>
