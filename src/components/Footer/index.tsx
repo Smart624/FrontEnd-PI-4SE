@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                         <Text fontWeight="bold">Links Úteis:</Text>
                         <Link href="/faq">FAQ</Link>
                         <Link href="/blog">Blog</Link>
-                        <Link href="/guias">Guides & Tutorials</Link>
+                        <Link href="/guias">Guias & Tutoriais</Link>
                         <Link href="/termos-de-servico">Termos de Serviço</Link>
                         <Link href="/politica-de-privacidade">Política de Privacidade</Link>
                     </VStack>
