@@ -10,7 +10,7 @@ import GuidesAndTutorials from "../pages/Guides";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsOfService from "../pages/TermsService";
 import Blog from "../pages/Blog";
-import Agendar from '../pages/Scheduling';
+import Agendar from '../pages/Scheduling/agendar';
 
 const RoutesComponent: React.FC = () => (
     <Router>

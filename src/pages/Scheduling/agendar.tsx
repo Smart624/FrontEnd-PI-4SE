@@ -42,8 +42,8 @@ const Agendar: React.FC = () => {
         // Substitua por uma chamada de API para salvar os dados no banco de dados
         navigate('/agendamento-confirmado');
         toast({
-            title: "Cadastro realizado com sucesso!",
-            description: "Você será redirecionado para a página de confirmação de agendamento.",
+            title: "Agendamento realizado com sucesso!",
+            description: "",
             status: "success",
             duration: 5000,
             isClosable: true,
