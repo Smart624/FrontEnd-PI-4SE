@@ -9,7 +9,7 @@ yarn.lock
 
 # Production build
 /build
-/dist
+#/dist
 
 # Next.js
 .next/

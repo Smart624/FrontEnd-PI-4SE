@@ -12,7 +12,7 @@ import {
     Icon, Center
 } from '@chakra-ui/react';
 import {MdBuild, MdDeliveryDining, MdTv} from 'react-icons/md';
-import {FaSoundcloud} from 'react-icons/fa';
+import {FaMicrophone, FaSoundcloud, FaTools} from 'react-icons/fa';
 import Layout from '../../components/Layout';
 import {useNavigate} from 'react-router-dom';
 import CorporateClients from '../../components/CorporateClients';
@@ -46,17 +46,17 @@ const Home: React.FC = () => {
                     <ServiceBox
                         icon={MdTv}
                         title="Conserto de TVs"
-                        description="Especialistas em todas as marcas"
+                        description="Reparos em todas as marcas com especialidade em tecnologia moderna."
                     />
                     <ServiceBox
-                        icon={MdBuild}
-                        title="Instalação de Soundbar"
-                        description="Qualidade de áudio otimizada"
+                        icon={FaMicrophone}
+                        title="Soundbar/Home Theater"
+                        description="Instalação e configuração para a melhor experiência de áudio em sua casa."
                     />
                     <ServiceBox
-                        icon={FaSoundcloud}
-                        title="Instalação de Home Theater"
-                        description="Experiência de cinema em casa"
+                        icon={FaTools}
+                        title="Instalação de Suportes"
+                        description="Instalação segura e precisa de suportes para TVs em paredes e outras superfícies."
                     />
                     <ServiceBox
                         icon={MdDeliveryDining}
